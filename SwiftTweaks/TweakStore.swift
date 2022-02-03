@@ -171,7 +171,7 @@ public final class TweakStore {
 		updateBindingsForTweak(anyTweak)
 	}
 
-	public func setValue(_ viewData: TweakViewData, forTweak tweak: AnyTweak) {
+	internal func setValue(_ viewData: TweakViewData, forTweak tweak: AnyTweak) {
 		persistence.setValue(viewData.value, forTweakIdentifiable: tweak)
 		updateBindingsForTweak(tweak)
 	}
